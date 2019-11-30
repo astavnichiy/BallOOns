@@ -4,7 +4,7 @@
 
 #from src.main.person 
 from person import Person
-
+from visualisation import StartVisualization
 
 #===============================================================================
 # class Person2:
@@ -19,5 +19,9 @@ from person import Person
 #===============================================================================
 
 
-person1 = Person('Вася')
+person1 = Person('Вася', 'computer')
+person1 = Person('Петя', 'computer')
 print (person1.get_name())
+print (person2.get_name())
+
+visual = StartVisualization(person1, person2)
